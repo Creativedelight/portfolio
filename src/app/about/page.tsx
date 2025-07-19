@@ -10,9 +10,9 @@ import { motion } from "framer-motion";
 import About from "@/components/About";
 
 export const metadata: Metadata = {
-  title: "About | Faith Munuhe",
+  title: "About | AI/ML Engineer",
   description:
-    "Faith Munuhe is a developer, designer and AI researcher. She is a digital nomad and travels around the world while working remotely.",
+    "Faith Munuhe is an AI/ML Engineer, specializing in developing intelligent solutions and scalable AI applications using Python, Django, and cutting-edge AI/ML tools.",
 };
 
 export default function AboutPage() {

@@ -13,22 +13,20 @@ export default function Home() {
       <div className="flex flex-col md:flex-row items-start md:space-x-8">
         <div className="md:w-1/2">
           <span className="text-4xl">👋</span>
-          <Heading className="font-black">Hello there! I&apos;m Munuhe</Heading>
+          <Heading className="font-black">Hello there! I&apos;m Faith Munuhe</Heading>
           <Paragraph className="max-w-xl mt-4">
-            I&apos;m a full-stack developer that loves{" "}
-            <Highlight>building products</Highlight> and web apps that can impact
-            millions of lives
+            I&apos;m an AI/ML Engineer passionate about{" "}
+            <Highlight>developing intelligent solutions</Highlight> and scalable AI applications that drive innovation.
           </Paragraph>
           <Paragraph className="max-w-xl mt-4">
-            I&apos;m a senior software engineer with{" "}
-            <Highlight>4 years of experience</Highlight> building scalable web apps
-            that are performance optimized and good looking.
+            I specialize in building robust AI systems using{" "}
+            <Highlight>Python, Django, Picone</Highlight> and other cutting-edge AI/ML tools and frameworks.
           </Paragraph>
         </div>
         <div className="md:w-1/2 flex justify-center items-center" style={{ width: "300px", height: "400px" }}>
           <ProfileCard
             name="Faith Munuhe"
-            title="Software Engineer"
+            title="AI/ML Engineer"
             handle="faithmunuhe"
             status="Online"
             contactText="Contact Me"

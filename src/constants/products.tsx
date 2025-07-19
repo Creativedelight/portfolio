@@ -1,130 +1,85 @@
-import sidefolioAceternity from "public/images/sidefolio-aceternity-2.png";
-import sidefolioAceternity2 from "public/images/sidefolio-aceternity-2.png";
-import sidefolioAlgochurn from "public/images/sidefolio-algochurn.png";
-import sidefolioAlgochurn2 from "public/images/sidefolio-algochurn.png";
-import sidefolioMoonbeam from "public/images/sidefolio-moonbeam.png";
-import sidefolioMoonbeam2 from "public/images/sidefolio-moonbeam-2.png";
-import sidefolioTailwindMasterKit from "public/images/sidefolio-tailwindmasterkit.png";
-import sidefolioTailwindMasterKit2 from "public/images/sidefolio-tailwindmasterkit-2.png";
-
 export const products = [
   {
-    href: "https://aceternity.com",
-    title: "Aceternity",
-    description:
-      "A design and development studio that focuses on building quality apps.",
-    thumbnail: sidefolioAceternity,
-    images: [sidefolioAceternity, sidefolioAceternity2],
-    stack: ["Nextjs", "Tailwindcss"],
-    slug: "aceternity",
+    href: "https://example.com/ai-chatbot",
+    title: "Intelligent Chatbot Platform",
+    description: "Developed an AI-powered chatbot using natural language processing (NLP) to provide automated customer support and information retrieval.",
+    thumbnail: "/images/sidefolio-aceternity-2.png",
+    images: ["/images/sidefolio-aceternity-2.png", "/images/sidefolio-aceternity-2.png"],
+    stack: ["Python", "Django", "TensorFlow", "NLP"],
+    slug: "ai-chatbot-platform",
     content: (
       <div>
         <p>
-          Sit eiusmod ex mollit sit quis ad deserunt. Sint aliqua aliqua ullamco
-          dolore nulla amet tempor sunt est ipsum. Dolor laborum eiusmod
-          cupidatat consectetur velit ipsum. Deserunt nisi in culpa laboris
-          cupidatat elit velit aute mollit nisi. Officia ad exercitation laboris
-          non cupidatat duis esse velit ut culpa et.{" "}
+          Designed and implemented a scalable AI chatbot platform capable of understanding and responding to complex user queries.
+          Leveraged advanced NLP techniques for intent recognition and entity extraction, ensuring highly accurate and context-aware conversations.
         </p>
         <p>
-          Exercitation pariatur enim occaecat adipisicing nostrud adipisicing
-          Lorem tempor ullamco exercitation quis et dolor sint. Adipisicing sunt
-          sit aute fugiat incididunt nostrud consequat proident fugiat id.
-          Officia aliquip laborum labore eu culpa dolor reprehenderit eu ex enim
-          reprehenderit. Cillum Lorem veniam eu magna exercitation.
-          Reprehenderit adipisicing minim et officia enim et veniam Lorem
-          excepteur velit adipisicing et Lorem magna.
-        </p>{" "}
+          The platform integrates with various backend systems and provides a seamless user experience through a custom-built web interface.
+          It significantly reduced customer service response times and improved user satisfaction.
+        </p>
       </div>
     ),
   },
   {
-    href: "https://algochurn.com",
-    title: "Algochurn",
-    description:
-      "Practice for technical interviews with hands on coding challenges.",
-    thumbnail: sidefolioAlgochurn,
-    images: [sidefolioAlgochurn, sidefolioAlgochurn2],
-    stack: ["Nextjs", "Tailwindcss"],
-    slug: "algochurn",
+    href: "https://example.com/predictive-analytics",
+    title: "Predictive Analytics Engine",
+    description: "Built a robust predictive analytics engine for forecasting market trends and optimizing resource allocation using machine learning models.",
+    thumbnail: "/images/sidefolio-algochurn.png",
+    images: ["/images/sidefolio-algochurn.png", "/images/sidefolio-algochurn.png"],
+    stack: ["Python", "Scikit-learn", "Pandas", "Data Visualization"],
+    slug: "predictive-analytics-engine",
     content: (
       <div>
         <p>
-          Sit eiusmod ex mollit sit quis ad deserunt. Sint aliqua aliqua ullamco
-          dolore nulla amet tempor sunt est ipsum. Dolor laborum eiusmod
-          cupidatat consectetur velit ipsum. Deserunt nisi in culpa laboris
-          cupidatat elit velit aute mollit nisi. Officia ad exercitation laboris
-          non cupidatat duis esse velit ut culpa et.{" "}
+          Developed a sophisticated predictive analytics engine that processes large datasets to identify patterns and forecast future outcomes.
+          Implemented various machine learning algorithms, including regression and classification, to provide actionable insights for business decision-making.
         </p>
         <p>
-          Exercitation pariatur enim occaecat adipisicing nostrud adipisicing
-          Lorem tempor ullamco exercitation quis et dolor sint. Adipisicing sunt
-          sit aute fugiat incididunt nostrud consequat proident fugiat id.
-          Officia aliquip laborum labore eu culpa dolor reprehenderit eu ex enim
-          reprehenderit. Cillum Lorem veniam eu magna exercitation.
-          Reprehenderit adipisicing minim et officia enim et veniam Lorem
-          excepteur velit adipisicing et Lorem magna.
-        </p>{" "}
+          The engine features a user-friendly dashboard for visualizing predictions and allows for real-time data ingestion and model retraining.
+          It has been instrumental in optimizing inventory management and sales forecasting for clients.
+        </p>
       </div>
     ),
   },
   {
-    href: "https://gomoonbeam.com",
-    title: "Moonbeam",
-    description:
-      "Never write from scratch again with Moonbeam, your AI first writing tool",
-    thumbnail: sidefolioMoonbeam,
-    images: [sidefolioMoonbeam, sidefolioMoonbeam2],
-    stack: ["Nextjs", "Tailwindcss"],
-    slug: "moonbeam",
+    href: "https://example.com/image-recognition",
+    title: "Custom Image Recognition System",
+    description: "Created a custom image recognition system for automated object detection and classification in various industrial applications.",
+    thumbnail: "/images/sidefolio-moonbeam.png",
+    images: ["/images/sidefolio-moonbeam.png", "/images/sidefolio-moonbeam-2.png"],
+    stack: ["Python", "TensorFlow", "Keras", "Computer Vision"],
+    slug: "image-recognition-system",
     content: (
       <div>
         <p>
-          Sit eiusmod ex mollit sit quis ad deserunt. Sint aliqua aliqua ullamco
-          dolore nulla amet tempor sunt est ipsum. Dolor laborum eiusmod
-          cupidatat consectetur velit ipsum. Deserunt nisi in culpa laboris
-          cupidatat elit velit aute mollit nisi. Officia ad exercitation laboris
-          non cupidatat duis esse velit ut culpa et.{" "}
+          Designed and deployed a high-performance image recognition system tailored for specific industrial use cases, such as quality control and defect detection.
+          Utilized deep learning architectures like Convolutional Neural Networks (CNNs) for accurate and efficient image analysis.
         </p>
         <p>
-          Exercitation pariatur enim occaecat adipisicing nostrud adipisicing
-          Lorem tempor ullamco exercitation quis et dolor sint. Adipisicing sunt
-          sit aute fugiat incididunt nostrud consequat proident fugiat id.
-          Officia aliquip laborum labore eu culpa dolor reprehenderit eu ex enim
-          reprehenderit. Cillum Lorem veniam eu magna exercitation.
-          Reprehenderit adipisicing minim et officia enim et veniam Lorem
-          excepteur velit adipisicing et Lorem magna.
-        </p>{" "}
+          The system includes a data labeling interface and a continuous learning pipeline to improve model performance over time.
+          It has significantly enhanced automation and reduced manual inspection efforts in manufacturing processes.
+        </p>
       </div>
     ),
   },
   {
-    href: "https://tailwindmasterkit.com",
-    title: "Tailwind Master Kit",
-    description:
-      "A beautiful and comprehensive Tailwind CSS components library for building modern websites and applications.",
-    thumbnail: sidefolioTailwindMasterKit,
-    images: [sidefolioTailwindMasterKit, sidefolioTailwindMasterKit2],
-    stack: ["Nextjs", "Tailwindcss"],
-    slug: "tailwindmasterkit",
+    href: "https://example.com/nlp-sentiment",
+    title: "Sentiment Analysis API",
+    description: "Developed a RESTful API for real-time sentiment analysis of text data, enabling businesses to monitor customer feedback and brand perception.",
+    thumbnail: "/images/sidefolio-tailwindmasterkit.png",
+    images: ["/images/sidefolio-tailwindmasterkit.png", "/images/sidefolio-tailwindmasterkit-2.png"],
+    stack: ["Python", "Django REST Framework", "NLTK", "SpaCy", "NLP"],
+    slug: "sentiment-analysis-api",
     content: (
       <div>
         <p>
-          Sit eiusmod ex mollit sit quis ad deserunt. Sint aliqua aliqua ullamco
-          dolore nulla amet tempor sunt est ipsum. Dolor laborum eiusmod
-          cupidatat consectetur velit ipsum. Deserunt nisi in culpa laboris
-          cupidatat elit velit aute mollit nisi. Officia ad exercitation laboris
-          non cupidatat duis esse velit ut culpa et.{" "}
+          Built a scalable and efficient sentiment analysis API that processes textual data from various sources, including social media and customer reviews.
+          Implemented advanced NLP techniques to accurately classify sentiment (positive, negative, neutral) and extract key opinions.
         </p>
         <p>
-          Exercitation pariatur enim occaecat adipisicing nostrud adipisicing
-          Lorem tempor ullamco exercitation quis et dolor sint. Adipisicing sunt
-          sit aute fugiat incididunt nostrud consequat proident fugiat id.
-          Officia aliquip laborum labore eu culpa dolor reprehenderit eu ex enim
-          reprehenderit. Cillum Lorem veniam eu magna exercitation.
-          Reprehenderit adipisicing minim et officia enim et veniam Lorem
-          excepteur velit adipisicing et Lorem magna.
-        </p>{" "}
+          The API is designed for easy integration into existing applications and provides valuable insights for market research and customer engagement strategies.
+          It offers high throughput and low latency for real-time sentiment monitoring.
+        </p>
       </div>
     ),
   },

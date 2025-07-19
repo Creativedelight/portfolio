@@ -11,9 +11,9 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Faith Munuhe - Developer",
+  title: "Faith Munuhe | AI/ML Engineer & Developer",
   description:
-    "Faith Munuhe is a developer, writer and speaker. She is a digital nomad and travels around the world while working remotely.",
+    "Faith Munuhe is a leading AI/ML Engineer specializing in Python, Django, and Picone. Explore her portfolio of intelligent solutions and innovative AI projects.",
 };
 
 export default function RootLayout({

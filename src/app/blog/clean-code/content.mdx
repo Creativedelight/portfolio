@@ -3,101 +3,77 @@ import { BlogLayout } from "@/components/BlogLayout";
 import { CodeWindow } from "@/components/CodeWindow";
 
 export const meta = {
-  date: "2023-08-18",
-  title: "Writing Clean Code With React",
+  date: "2025-07-19",
+  title: "Writing Clean Code for AI/ML Projects",
   description:
-    "Effective and efficient ways to write clean code with React while keeping in mind the performance and maintainability of the codebase.",
+    "Best practices for writing clean, maintainable, and efficient code in AI/ML projects, focusing on readability, modularity, and scalability.",
   image:
     "https://images.unsplash.com/photo-1542831371-29b0f74f9713?q=80&w=3540&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-  tags: ["Clean Code"],
+  tags: ["Clean Code", "AI/ML", "Python"],
 };
 
 export default (props) => <BlogLayout meta={meta} {...props} />;
 
-Velit cillum fugiat proident pariatur anim proident laborum incididunt magna in labore adipisicing veniam quis. Ut et exercitation dolor in enim quis. Et est excepteur exercitation voluptate in qui duis nulla in anim ut commodo deserunt nisi. Dolor pariatur irure occaecat Lorem mollit veniam adipisicing.
+In the rapidly evolving landscape of Artificial Intelligence and Machine Learning, writing clean and maintainable code is paramount. As models become more complex and datasets grow larger, the importance of well-structured, readable, and efficient code cannot be overstated. This article delves into best practices for ensuring your AI/ML projects are not just functional, but also sustainable and scalable.
 
-Deserunt qui ea do et laborum ad id. Tempor laborum aute fugiat tempor eu. Amet sint sint proident pariatur eiusmod mollit excepteur excepteur. Dolore cillum nulla enim tempor ad.
+One of the core tenets of clean code in AI/ML is modularity. Breaking down your project into smaller, independent modules—such as data preprocessing, model definition, training loops, and evaluation metrics—enhances readability and simplifies debugging. Each module should have a single responsibility, making it easier to test and reuse.
 
-Laborum quis proident ut anim consectetur. Consequat fugiat eiusmod qui officia duis eu minim cillum do qui. Sunt sit veniam minim ad id sunt magna est enim.
+Another crucial aspect is data handling. Ensure your data loading, transformation, and augmentation pipelines are clearly defined and robust. Avoid hardcoding paths or parameters; instead, use configuration files or command-line arguments. This practice not only makes your code more flexible but also reduces the chances of errors when moving between different environments or datasets.
 
-Consectetur est sunt minim culpa quis aute officia incididunt ea laboris nulla officia dolor. Cupidatat cupidatat esse veniam cillum labore ullamco aliqua ex. Cillum incididunt ipsum laborum dolor enim incididunt consectetur id consectetur magna. Consequat mollit non ea cupidatat exercitation. Consequat reprehenderit eiusmod nisi ea esse id ut est consequat eu aliqua do quis.
+Furthermore, consistent naming conventions and comprehensive documentation are vital. Variables, functions, and classes should have descriptive names that clearly indicate their purpose. Documenting your code, especially complex algorithms or model architectures, helps other developers (and your future self) understand the logic and intent behind your implementations.
 
-Occaecat commodo velit ea consectetur ut sit. Duis eiusmod ad tempor nisi magna dolore incididunt ea dolore. Commodo proident eiusmod consequat cupidatat consectetur adipisicing dolor commodo tempor labore non dolore Lorem consectetur.
+Finally, consider the reproducibility of your experiments. This involves managing dependencies, versioning your data and models, and logging all experimental parameters and results. Tools like Git for code versioning, and dedicated MLOps platforms for experiment tracking, are indispensable for maintaining a clean and reproducible AI/ML workflow.
+
+By adhering to these principles, you can significantly improve the quality of your AI/ML projects, making them easier to develop, debug, and deploy. Clean code is not just about aesthetics; it's about building a solid foundation for robust and impactful AI solutions.
 
 ## Code Snippet
 
-<CodeWindow title="BoxesContainer.tsx">
+<CodeWindow title="model_training.py">
 
-```TSX
-import React from "react";
-import { motion } from "framer-motion";
+```python
+import tensorflow as tf
+from tensorflow.keras import layers, models
 
-export const BoxesContainer = () => {
-  const rows = new Array(150).fill(1);
-  const cols = new Array(100).fill(1);
-  let colors = [
-    "--sky-300",
-    "--pink-300",
-    "--green-300",
-    "--yellow-300",
-    "--red-300",
-    "--purple-300",
-    "--blue-300",
-    "--indigo-300",
-    "--violet-300",
-  ];
-  const getRandomColor = () => {
-    return colors[Math.floor(Math.random() * colors.length)];
-  };
+def build_and_train_model(train_data, train_labels, epochs=10, batch_size=32):
+    """
+    Builds, compiles, and trains a simple convolutional neural network.
 
-  return (
-    <div
-      style={{
-        transform: `translate(-40%,-60%) skewX(-48deg) skewY(14deg) scale(0.675) rotate(0deg) translateZ(0)`,
-      }}
-      className="absolute left-1/4 p-4 -top-1/4 flex  -translate-x-1/2 -translate-y-1/2 w-full h-full z-0 "
-    >
-      {rows.map((_, i) => (
-        <motion.div
-          key={`row` + i}
-          className="w-16 h-8  border-l  border-slate-700 relative"
-        >
-          {cols.map((_, j) => (
-            <motion.div
-              whileHover={{
-                backgroundColor: `var(${getRandomColor()})`,
-                transition: { duration: 0 },
-              }}
-              animate={{
-                transition: { duration: 2 },
-              }}
-              key={`col` + j}
-              className="w-16 h-8  border-r border-t border-slate-700 relative"
-            >
-              {j % 2 === 0 && i % 2 === 0 ? (
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  strokeWidth="1.5"
-                  stroke="currentColor"
-                  className="absolute h-6 w-10 -top-[14px] -left-[22px] text-slate-700 stroke-[1px] pointer-events-none"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    d="M12 6v12m6-6H6"
-                  />
-                </svg>
-              ) : null}
-            </motion.div>
-          ))}
-        </motion.div>
-      ))}
-    </div>
-  );
-};
+    Args:
+        train_data (np.array): Training features.
+        train_labels (np.array): Training labels.
+        epochs (int): Number of training epochs.
+        batch_size (int): Batch size for training.
 
+    Returns:
+        tf.keras.Model: The trained model.
+    """
+    model = models.Sequential([
+        layers.Conv2D(32, (3, 3), activation='relu', input_shape=train_data.shape[1:]),
+        layers.MaxPooling2D((2, 2)),
+        layers.Conv2D(64, (3, 3), activation='relu'),
+        layers.MaxPooling2D((2, 2)),
+        layers.Flatten(),
+        layers.Dense(64, activation='relu'),
+        layers.Dense(10, activation='softmax')
+    ])
+
+    model.compile(optimizer='adam',
+                  loss='sparse_categorical_crossentropy',
+                  metrics=['accuracy'])
+
+    model.fit(train_data, train_labels, epochs=epochs, batch_size=batch_size)
+    return model
+
+if __name__ == "__main__":
+    # Example usage with dummy data
+    (x_train, y_train), (_, _) = tf.keras.datasets.mnist.load_data()
+    x_train = x_train.reshape((60000, 28, 28, 1)).astype('float32') / 255
+
+    print("
+Training a sample model...")
+    trained_model = build_and_train_model(x_train, y_train, epochs=1)
+    trained_model.summary()
+    print("Model training complete.")
 ```
 
 </CodeWindow>

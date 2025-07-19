@@ -10,11 +10,11 @@ import { Metadata } from "next";
 import Image from "next/image";
 import { redirect } from "next/navigation";
 
-type Props = {
+type PageProps = {
   params: { slug: string };
 };
 
-export async function generateMetadata({ params }: Props): Promise<Metadata> {
+export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
   const slug = params.slug;
   const product = products.find((p) => p.slug === slug) as Product | undefined;
   if (product) {
@@ -33,9 +33,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
 export default function SingleProjectPage({
   params,
-}: {
-  params: { slug: string };
-}) {
+}: PageProps) {
   const slug = params.slug;
   const product = products.find((p) => p.slug === slug);
 
