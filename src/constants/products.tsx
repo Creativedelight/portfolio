@@ -63,6 +63,28 @@ export const products = [
     ),
   },
   {
+    href: "https://timetable-management-system-sigma.vercel.app/",
+    title: "MKU Interactive Campus Map",
+    description: "Developed an interactive web-based map for Mount Kenya University to help students and visitors easily navigate the campus facilities.",
+    thumbnail: "/images/sidefolio-aceternity-2.png",
+    images: ["/images/sidefolio-algochurn.png", "/images/sidefolio-algochurn.png"],
+    stack: ["JavaScript", "Leaflet.js", "OpenStreetMap"],
+    slug: "mku-interactive-map",
+    content: (
+      <div>
+        <p>
+          Built a dynamic interactive campus map as a final year project to improve wayfinding on Mount Kenya University grounds.
+          The application integrates geolocation features and markers for key university locations like lecture halls, offices, hostels, and recreational areas.
+        </p>
+        <p>
+          Leveraged Leaflet.js with OpenStreetMap data to render the map.
+          The tool provides real-time search functionality and user-friendly navigation.
+        </p>
+      </div>
+    ),
+  },
+  
+  {
     href: "https://example.com/nlp-sentiment",
     title: "Sentiment Analysis API",
     description: "Developed a RESTful API for real-time sentiment analysis of text data, enabling businesses to monitor customer feedback and brand perception.",
