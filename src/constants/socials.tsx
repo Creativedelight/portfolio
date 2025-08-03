@@ -11,13 +11,9 @@ export const socials = [
     icon: IconBrandGithub,
   },
   {
-    href: "https://linkedin.com/in/FaithMunuhe",
+    href: "https://www.linkedin.com/in/fay-munuhe-1157b3363",
     label: "LinkedIn",
     icon: IconBrandLinkedin,
   },
-  {
-    href: "https://youtube.com/maninthere",
-    label: "YouTube",
-    icon: IconBrandYoutube,
-  },
+  
 ];

@@ -1,40 +1,63 @@
 export const timeline = [
   {
-    company: "BeeMultiscent",
+    title: "Professional Summary",
+    description:
+      "Experienced AI/ML Engineer and Backend Developer specializing in intelligent automation, chatbot systems, and scalable backend solutions. Passionate about leveraging data science, machine learning, and natural language processing to deliver innovative, user-centric applications and IoT integrations.",
+    responsibilities: [
+      "Strong foundation in AI/ML, data analysis, and software engineering.",
+      "Proven ability to design and deploy AI-driven systems for real-time decision-making.",
+      "Skilled in building robust backend architectures and seamless user experiences.",
+    ],
+  },
+  {
+    title: "Technical Skills",
+    description: "Proficient in a broad range of technologies and tools across software development, AI, and data science.",
+    responsibilities: [
+      "Languages: Python, JavaScript, PHP, SQL",
+      "Frameworks & Libraries: Django, Node.js, Streamlit, React",
+      "AI/ML Tools: scikit-learn, TensorFlow, Hugging Face, LangChain, OpenAI APIs",
+      "Data Analysis: Pandas, Seaborn, Matplotlib, Pinecone, FAISS",
+      "Databases: MySQL, PostgreSQL",
+      "Concepts: Natural Language Processing, Forecasting, Document-Aware Chatbots, Predictive Analytics",
+    ],
+  },
+  {
+    title: "Certifications & Projects",
+    description:
+      "Completed key certifications and led impactful projects demonstrating strong skills in machine learning, data analysis, and AI-driven applications.",
+    responsibilities: [
+      "Machine Learning with Python (freeCodeCamp): Supervised and unsupervised learning, SVMs, clustering.",
+      "Data Analysis with Python (freeCodeCamp): Exploratory data analysis, visualization, and forecasting.",
+      "Supermarket Sales Forecasting: End-to-end time series analysis with actionable insights.",
+      "Voice Assistant for IoT Scent Devices: Integrated speech-to-text, text-to-speech, and real-time device control.",
+      "LangChain Document-Aware Chatbot: Enabled querying of DOCX, PDF, and image documents with Pinecone vector store and OpenAI models.",
+    ],
+  },
+  {
+    company: "BeeMultiscents",
     title: "Lead AI/ML Engineer",
-    date: "2025 and currently",
+    date: "2025 - Present",
     description: "Pioneering intelligent automation in scent and fragrance delivery systems.",
     responsibilities: [
-      "Architected and deployed AI-driven algorithms for real-time scent composition and adaptive fragrance diffusion based on environmental data and user preferences.",
-      "Developed robust machine learning models for predictive scent depletion and automated replenishment, optimizing supply chain logistics.",
-      "Integrated advanced sensor fusion techniques to enhance contextual awareness of fragrance devices, leading to personalized user experiences.",
-      "Led the development of scalable Python-based backend services using Django, facilitating seamless data ingestion and model serving for IoT-enabled devices.",
-      "Implemented anomaly detection systems for device performance and scent quality assurance, ensuring high operational reliability.",
+      "Designed intelligent scent blending algorithms responsive to user preferences and environmental factors.",
+      "Built predictive models for fragrance usage and automated replenishment workflows.",
+      "Developed scalable Django APIs for AI/ML integration with IoT devices.",
+      "Integrated sensor fusion for adaptive fragrance delivery and context-aware user interaction.",
+      "Created anomaly detection systems for device diagnostics and scent quality assurance.",
     ],
   },
   {
-    company: "MKU University Projects",
-    title: "Lead Software Developer / Research Assistant",
-    date: "2022 - 2025",
-    description: "Innovating campus solutions through intelligent systems and data visualization.",
+    company: "Mount Kenya University",
+    title: "Lead Software Developer (Final Year Project)",
+    date: "2024 – 2025",
+    description:
+      "Developed a full-stack Timetable Management System with an integrated AI-powered chatbot for automated scheduling queries and real-time communication.",
     responsibilities: [
-      "Developed an interactive campus map application using geospatial data and Python, enhancing navigation and resource discovery for students and faculty.",
-      "Designed and implemented a smart timetable system with real-time lecturer position tracking, optimizing classroom utilization and student scheduling.",
-      "Conducted research on predictive analytics for student performance, utilizing machine learning to identify at-risk students and recommend personalized interventions.",
-      "Collaborated on a project to automate university administrative tasks using scripting and data integration, significantly reducing manual workload.",
-    ],
-  },
-  {
-    company: "High School Projects",
-    title: "Junior Innovator / Robotics Club Lead",
-    date: "2018 - 2022",
-    description: "Exploring foundational concepts in robotics, automation, and early programming.",
-    responsibilities: [
-      "Designed and built a line-following robot using basic sensors and microcontrollers, demonstrating principles of autonomous navigation.",
-      "Developed a simple home automation system prototype using Arduino, controlling lights and appliances via basic programming interfaces.",
-      "Led the school robotics club, fostering interest in STEM fields and guiding peers in competitive robotics challenges.",
-      "Created a basic inventory management system using Python for school supplies, improving organizational efficiency.",
-      "Participated in regional science fairs, presenting projects on renewable energy and basic circuit design.",
+      "Built a role-based web system using PHP and MySQL managing university timetables with real-time user access for Timetablers, Lecturers, and Students.",
+      "Created a custom AI chatbot to assist users with scheduling queries, class info, and live updates—improving usability and reducing support workload.",
+      "Engineered intelligent conflict resolution features for overlapping lectures and dynamic schedule adjustments.",
+      "Led backend and frontend development including database schema design, secure authentication, and responsive UI implementation.",
+      "Integrated session management, notifications, and user dashboards to streamline academic planning across departments.",
     ],
   },
 ];

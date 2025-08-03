@@ -21,7 +21,7 @@ export const products = [
     ),
   },
   {
-    href: "https://example.com/predictive-analytics",
+    href: "https://sales-analytiq-dashboard.streamlit.app/",
     title: "Predictive Analytics Engine",
     description: "Built a robust predictive analytics engine for forecasting market trends and optimizing resource allocation using machine learning models.",
     thumbnail: "/images/sidefolio-algochurn.png",
